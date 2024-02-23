@@ -33,7 +33,7 @@ func DatabasePgSQL() DatabasePGSQLConfig {
 		Host:              os.Getenv("PGSQL_HOST"),
 		Port:              os.Getenv("PGSQL_PORT"),
 		TimeZone:          os.Getenv("DB_TIMEZONE"),
-		MaxConnectionIdle: utils.ConvertInt("DB_MAX_CON_IDLE"),
+		MaxConnectionIdle: utils.ConvertEnvToInt("DB_MAX_CON_IDLE"),
 		MaxConnectionOpen: utils.ConvertInt("DB_MAX_CON_OPEN"),
 		Schema:            schema,
 		Debug:             utils.ConvertBool("DEBUG"),

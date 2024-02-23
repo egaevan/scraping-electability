@@ -2,6 +2,7 @@ package config
 
 import (
 	"database/sql"
+	"github.com/scraping-electability/pkg/config"
 	"strings"
 )
 

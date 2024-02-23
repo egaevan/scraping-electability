@@ -10,13 +10,13 @@ type RestBody struct {
 	Data    interface{} `json:"data"`
 }
 
-func ConvertInt(env string) int {
+func ConvertEnvToInt(env string) int {
 	v, _ := strconv.Atoi(os.Getenv(env))
 	return v
 }
 
-func ConvertBool(env string) bool {
-	v, _ := strconv.ParseBool(os.Getenv(env))
+func ConvertEnvToBool(env string) int {
+	v, _ := strconv.Atoi(os.Getenv(env))
 	return v
 }
 
